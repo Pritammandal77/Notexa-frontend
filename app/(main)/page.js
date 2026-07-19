@@ -1,4 +1,3 @@
-
 import Faqs from "@/components/home/Faqs";
 import Hero from "@/components/home/Hero";
 import PopularNotes from "@/components/home/PopularNotes";

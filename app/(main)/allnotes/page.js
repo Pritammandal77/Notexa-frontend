@@ -106,7 +106,7 @@ function Page() {
 
     useEffect(() => {
         if (isHovered) return;
-        const timer = setInterval(() => {
+        const timer = setInterval(() => { 
             setDirection(1);
             setCurrentSlide((prev) => (prev + 1) % bannerSlides.length);
         }, 4500);
@@ -128,8 +128,7 @@ function Page() {
         setCurrentSlide((prev) => (prev + 1) % bannerSlides.length);
     };
 
-
-
+    
     const handleDeleteNotes = async (notesId) => {
         try {
             await deleteNotes(notesId);
@@ -140,7 +139,7 @@ function Page() {
             toast.error("Something went wrong while deleting the notes");
         }
     };
-
+   
     return (
         <div className='w-full min-h-screen py-20 px-2 xl:px-6'>
 

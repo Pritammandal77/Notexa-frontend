@@ -146,7 +146,7 @@ function Page() {
                 amount: order.amount,
                 currency: order.currency,
                 name: "Notexa Notes Upload",
-                description: "Pay ₹9 to upload your notes",
+                description: "Pay ₹29 to buy this notes",
                 order_id: order.id,
 
                 handler: async function (response) {
