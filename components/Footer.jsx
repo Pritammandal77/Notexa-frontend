@@ -138,7 +138,7 @@ function Footer() {
 
                 { }
                 <div className="text-center   text-sm pt-10 mt-10 border-t border-gray-800">
-                    <p>Built By Pritam Mandal</p>
+                    <p>Developed By Pritam Mandal</p>
                     <p>
                         &copy; {new Date().getFullYear()} Notexa All rights reserved.
                     </p>

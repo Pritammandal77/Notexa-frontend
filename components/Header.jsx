@@ -155,19 +155,24 @@ function Header() {
                                 )
                         }
 
-
                         <li>
                             <Link href="/" onClick={() => setIsSidebarOpen(false)}>Home</Link>
                         </li>
-                        <li>
-                            <Link href="/profile" onClick={() => setIsSidebarOpen(false)}>Profile</Link>
-                        </li>
+                        {
+                            user &&
+                            <li>
+                                <Link href="/profile" onClick={() => setIsSidebarOpen(false)}>Profile</Link>
+                            </li>
+                        }
                         <li>
                             <Link href="/allnotes" onClick={() => setIsSidebarOpen(false)}>Notes</Link>
                         </li>
-                        <li>
-                            <Link href="/sellnotes" onClick={() => setIsSidebarOpen(false)}>Sell Notes</Link>
-                        </li>
+                        {
+                            user &&
+                            <li>
+                                <Link href="/sellnotes" onClick={() => setIsSidebarOpen(false)}>Sell Notes</Link>
+                            </li>
+                        }
                         <li>
                             <Link href="/about" onClick={() => setIsSidebarOpen(false)}>About</Link>
                         </li>
